@@ -18,7 +18,7 @@ router.get('/:id', (req, res) => {
     })
 })
 
-router.post('/', (req, req) => {
+router.post('/', (req, res) => {
     console.log('POST - req.body', req.body)
     user.push(req.body)
     res.json({        
