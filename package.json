@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/KirkBetzina/mintbeanBackend/issues"
   },
-  "homepage": "https://github.com/KirkBetzina/mintbeanBackend#readme",
+  "homepage": "https://mintbean-cards-backend.herokuapp.com/",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
