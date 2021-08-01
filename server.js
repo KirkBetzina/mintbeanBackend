@@ -1,5 +1,5 @@
 require('dotenv').config();
-const mongoose = require('./db/connection');
+const mongoose = require('./users/db/connections.js');
 const morgan = require('morgan');
 const cors = require('cors');
 const express = require("express");
@@ -11,7 +11,7 @@ const PORT = process.env.PORT
 ///////////////////////////
 const logger = require('morgan')
 app.use(logger('dev'))
-app.use(exprees.urlencoded({extended:false}))
+app.use(express.urlencoded({extended:false}))
 app.use(cors()); // <----- add cors headers
 app.use(express.json()); // <---- parses JSON bodies and adds them to req.body
 app.use(morgan("tiny")); // <----- logging for debugging
